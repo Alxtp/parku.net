@@ -4,7 +4,6 @@
       title="Meet Our Team"
       description="The passionate individuals behind ParkU, dedicated to transforming urban parking."
     />
-
     <UPageSection
       title="Our Team"
       description="Get to know the people driving ParkU forward."
