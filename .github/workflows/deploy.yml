@@ -12,11 +12,19 @@ on:
 permissions:
   contents: read
 
+env:
+  NODE_VERSION: '22.20'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v6
+
+    - name: Setup Node ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ env.NODE_VERSION }}
 
     - uses: azure/static-web-apps-deploy@v1
       with:
