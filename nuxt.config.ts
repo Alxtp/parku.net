@@ -21,7 +21,7 @@ export default defineNuxtConfig({
     azure: {
       config: {
         platform: {
-          apiRuntime: 'node:22'
+          apiRuntime: 'node:20'
         }
       }
     }
