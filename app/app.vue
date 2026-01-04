@@ -61,6 +61,10 @@ const items = computed<NavigationMenuItem[]>(() => [
           variant="ghost"
         >Download</UButton>
       </template>
+
+      <template #body>
+        <UNavigationMenu orientation="vertical" :items="items" />
+      </template>
     </UHeader>
 
     <UMain>
@@ -69,7 +73,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <USeparator/>
 
-    <UFooter> 
+    <UFooter>
       <template #left>
         <p class="text-sm text-muted">
           Built with Nuxt UI • © {{ new Date().getFullYear() }}
