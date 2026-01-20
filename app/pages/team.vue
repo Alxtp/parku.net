@@ -10,38 +10,45 @@
     >
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <UCard class="text-center">
-          <img src="/img/profiles/profile_Ashoka_Tano.jpg" alt="Ashoka Tano" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-          <h3 class="text-lg font-semibold">Ashoka Tano</h3>
-          <p class="text-muted">CEO & Founder</p>
-          <p class="text-sm mt-2">Visionary leader passionate about solving urban mobility challenges.</p>
-        </UCard>
-
-        <UCard class="text-center">
-          <img src="/img/profiles/profile_Boss_Nass_Green.jpg" alt="Boss Nass Green" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-          <h3 class="text-lg font-semibold">Boss Nass Green</h3>
-          <p class="text-muted">COO</p>
-          <p class="text-sm mt-2">Expert in operations, ensuring smooth day-to-day management.</p>
-        </UCard>
-
-        <UCard class="text-center">
-          <img src="/img/profiles/profile_Droid.jpg" alt="Droid" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-          <h3 class="text-lg font-semibold">Droid</h3>
-          <p class="text-muted">Lead Developer</p>
-          <p class="text-sm mt-2">Tech wizard building the robust platform that powers ParkU.</p>
-        </UCard>
-
-        <UCard class="text-center">
-          <img src="/img/profiles/profile_Jar_Jar_Binks.jpg" alt="Jar Jar Binks" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-          <h3 class="text-lg font-semibold">Jar Jar Binks</h3>
+          <img src="/img/profiles/pb_anamaria_miskovic.png" alt="Anamaria Miskovic" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Anamaria Miskovic</h3>
           <p class="text-muted">Marketing Director</p>
-          <p class="text-sm mt-2">Creative mind spreading the word about ParkU worldwide.</p>
+          <p class="text-sm mt-2">Responsible for social media strategy and brand presence</p>
         </UCard>
 
         <UCard class="text-center">
-          <img src="/img/profiles/profile_pilot.jpg" alt="Pilot" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-          <h3 class="text-lg font-semibold">Pilot</h3>
+          <img src="/img/profiles/pb_flavia_wenger.png" alt="Flavia Wenger" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Flavia Wenger</h3>
+          <p class="text-muted">CEO & Founder</p>
+          <p class="text-sm mt-2">Responsible for company vision, strategy, and leadership</p>
+        </UCard>
+
+        <UCard class="text-center">
+          <img src="/img/profiles/pb_lea_kronig.png" alt="Lea Kronig" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Lea Kronig</h3>
           <p class="text-muted">Operations Manager</p>
-          <p class="text-sm mt-2">Ensures everything runs like clockwork in our operations.</p>
+          <p class="text-sm mt-2">Responsible for operations, key business contacts, and functional oversight</p>
+        </UCard>
+
+        <UCard class="text-center">
+          <img src="/img/profiles/pb_melvin_steffen.png" alt="Melvin Steffen" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Melvin Steffen</h3>
+          <p class="text-muted">Marketing Director</p>
+          <p class="text-sm mt-2">Responsible for social media initiatives and strategic partnerships</p>
+        </UCard>
+
+        <UCard class="text-center">
+          <img src="/img/profiles/pb_mina_jungen.png" alt="Mina Jungen" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Mina Jungen</h3>
+          <p class="text-muted">Operations Manager</p>
+          <p class="text-sm mt-2">Responsible for financial management and internal business process</p>
+        </UCard>
+
+        <UCard class="text-center">
+          <img src="/img/profiles/pb_Irina_Wenger.png" alt="Irina Wenger" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-lg font-semibold">Irina Wenger</h3>
+          <p class="text-muted">Lead Developer</p>
+          <p class="text-sm mt-2">Responsible for software development and technical architecture</p>
         </UCard>
       </div>
     </UPageSection>
@@ -53,7 +60,7 @@
         variant="subtle"
         :links="[{
           label: 'Contact Us',
-          to: '/about',
+          to: '/contact',
           icon: 'i-lucide-mail'
         }]"
       />
