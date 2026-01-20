@@ -3,7 +3,7 @@
 
     <UPageSection
       title="Get in Touch"
-      description="We'd love to hear from you! Send us a mail and we'll get back to you shortly"
+      description="We'd love to hear from you! Send us a mail and we'll get back to you shortly."
     >
       <div class="max-w-2xl mx-auto text-center">
         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md">

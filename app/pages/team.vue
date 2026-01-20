@@ -45,7 +45,7 @@
         </UCard>
 
         <UCard class="text-center">
-          <img src="/img/profiles/pb_Irina_Wenger.png" alt="Irina Wenger" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+          <img src="/img/profiles/pb_irina_wenger.png" alt="Irina Wenger" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
           <h3 class="text-lg font-semibold">Irina Wenger</h3>
           <p class="text-muted">Lead Developer</p>
           <p class="text-sm mt-2">Responsible for software development and technical architecture</p>
