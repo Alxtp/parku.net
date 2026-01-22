@@ -18,8 +18,6 @@
           <h3 class="text-xl font-semibold mb-4">iOS</h3>
           <p class="text-muted mb-6">Download from the App Store for iPhone and iPad.</p>
           <UButton
-            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            target="_blank"
             icon="i-simple-icons-appstore"
             size="lg"
             color="neutral"
@@ -32,8 +30,6 @@
           <h3 class="text-xl font-semibold mb-4">Android</h3>
           <p class="text-muted mb-6">Get it on Google Play for Android devices.</p>
           <UButton
-            to="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            target="_blank"
             icon="i-simple-icons-googleplay"
             size="lg"
             color="neutral"
