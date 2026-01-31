@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "about": "About",
+    "team": "Team",
+    "contact": "Contact",
+    "download": "Download"
+  },
+  "footer": "Built with Nuxt UI • ©",
+  "home": {
+    "title": "ParkU - Smart Parking Solutions",
+    "description": "Book and list parking spots effortlessly with ParkU. Find free parking nearby on our interactive map and manage your spots with ease.",
+    "download": "Download Now",
+    "info": "Learn More",
+    "hero": {
+      "alt": "ParkU Hero Banner"
+    },
+    "features": {
+      "title": "Why Choose ParkU?",
+      "description": "Experience the future of parking with our innovative features designed to make finding and managing parking spots simple and efficient.",
+      "items": {
+        "map": {
+          "title": "Interactive Map View",
+          "description": "Locate free parking spots nearby with our real-time interactive map. See availability at a glance and navigate directly to your spot."
+        },
+        "booking": {
+          "title": "Easy Booking",
+          "description": "Reserve parking spots in seconds. Choose your preferred time and duration, and pay securely through the app."
+        },
+        "list": {
+          "title": "List Your Spots",
+          "description": "Turn your unused parking space into extra income. List your spots easily and manage bookings with our user-friendly interface."
+        },
+        "secure": {
+          "title": "Secure & Reliable",
+          "description": "Your data and transactions are protected with top-tier security. Enjoy peace of mind with verified users and secure payments."
+        },
+        "mobile": {
+          "title": "Mobile-First Design",
+          "description": "Optimized for mobile devices, ParkU works seamlessly on iOS and Android. Access all features on the go."
+        },
+        "community": {
+          "title": "Community Driven",
+          "description": "Join a growing community of drivers and spot owners. Share feedback and help improve parking in your area."
+        }
+      }
+    },
+    "mapView": {
+      "alt": "ParkU Map View",
+      "caption": "Discover available parking spots on our interactive map"
+    },
+    "cta": {
+      "title": "Ready to Revolutionize Your Parking Experience?",
+      "description": "Download ParkU today and never worry about finding parking again. Join thousands of users who have simplified their daily commute.",
+      "download": "Download ParkU",
+      "team": "Meet the Team"
+    }
+  },
+  "about": {
+    "title": "About ParkU",
+    "description": "ParkU is revolutionizing urban parking by connecting drivers with available parking spots through a seamless, technology-driven platform.",
+    "hero": {
+      "alt": "ParkU Feature Highlight"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To eliminate the stress of finding parking and maximize the utilization of urban parking spaces.",
+      "problem": {
+        "title": "The Problem",
+        "description": "In busy cities, finding parking can be frustrating and time-consuming. Drivers waste valuable time circling blocks, while parking owners leave spots unused."
+      },
+      "solution": {
+        "title": "Our Solution",
+        "description": "ParkU bridges the gap by allowing spot owners to list their spaces and drivers to book them instantly via our intuitive app."
+      }
+    },
+    "howItWorks": {
+      "title": "How ParkU Works",
+      "description": "Simple steps to smarter parking.",
+      "steps": {
+        "find": {
+          "title": "Find Spots",
+          "description": "Use our interactive map to locate available parking spots near your destination."
+        },
+        "book": {
+          "title": "Book Instantly",
+          "description": "Reserve your spot with just a few taps. Choose your preferred time and duration."
+        },
+        "park": {
+          "title": "Park & Go",
+          "description": "Arrive at your reserved spot and park confidently. No more guessing or circling."
+        }
+      }
+    },
+    "cta": {
+      "title": "Join the ParkU Community",
+      "description": "Download the app today and experience hassle-free parking.",
+      "downloadButton": "Download Now"
+    }
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "description": "The passionate individuals behind ParkU, dedicated to transforming urban parking.",
+    "section": {
+      "title": "Our Team",
+      "description": "Get to know the people driving ParkU forward."
+    },
+    "members": {
+      "anamaria": {
+        "name": "Anamaria Miskovic",
+        "role": "Marketing Director",
+        "responsibility": "Responsible for social media strategy and brand presence"
+      },
+      "flavia": {
+        "name": "Flavia Wenger",
+        "role": "CEO & Founder",
+        "responsibility": "Responsible for company vision, strategy, and leadership"
+      },
+      "lea": {
+        "name": "Lea Kronig",
+        "role": "Operations Manager",
+        "responsibility": "Responsible for operations, key business contacts, and functional oversight"
+      },
+      "melvin": {
+        "name": "Melvin Steffen",
+        "role": "Marketing Director",
+        "responsibility": "Responsible for social media initiatives and strategic partnerships"
+      },
+      "mina": {
+        "name": "Mina Jungen",
+        "role": "Operations Manager",
+        "responsibility": "Responsible for financial management and internal business process"
+      },
+      "irina": {
+        "name": "Irina Wenger",
+        "role": "Lead Developer",
+        "responsibility": "Responsible for software development and technical architecture"
+      }
+    },
+    "cta": {
+      "title": "Want to Join Our Team?",
+      "description": "We're always looking for talented individuals to help us innovate in the parking space.",
+      "contactButton": "Contact Us"
+    }
+  },
+  "download": {
+    "title": "Download ParkU",
+    "description": "Get the app and start parking smarter today. Available on iOS and Android.",
+    "hero": {
+      "alt": "Download ParkU"
+    },
+    "section": {
+      "title": "Choose Your Platform",
+      "description": "ParkU is available for download on all major mobile platforms."
+    },
+    "platforms": {
+      "ios": {
+        "name": "iOS",
+        "description": "Download from the App Store for iPhone and iPad.",
+        "button": "Download on App Store"
+      },
+      "android": {
+        "name": "Android",
+        "description": "Get it on Google Play for Android devices.",
+        "button": "Get on Google Play"
+      }
+    },
+    "cta": {
+      "title": "Not Ready to Download Yet?",
+      "description": "Learn more about ParkU and how it can change your parking experience.",
+      "aboutButton": "About ParkU",
+      "teamButton": "Meet the Team"
+    }
+  }
+}
