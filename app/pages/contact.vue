@@ -3,13 +3,16 @@ import * as z from "zod";
 import type { FormSubmitEvent } from "@nuxt/ui";
 
 const localePath = useLocalePath();
-const { $csrfFetch } = useNuxtApp();
 
-const schema = computed(() => z.object({
-  name: z.string($t("contact.form.validation.nameRequired")),
-  email: z.email($t("contact.form.validation.emailInvalid")),
-  message: z.string($t("contact.form.validation.messageRequired")).min(10, $t("contact.form.validation.messageMin")),
-}));
+const schema = computed(() =>
+  z.object({
+    name: z.string($t("contact.form.validation.nameRequired")),
+    email: z.email($t("contact.form.validation.emailInvalid")),
+    message: z
+      .string($t("contact.form.validation.messageRequired"))
+      .min(10, $t("contact.form.validation.messageMin")),
+  }),
+);
 
 type Schema = z.output<typeof schema>;
 
@@ -26,16 +29,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   try {
     isSubmitting.value = true;
 
-    const { data, error } = await $csrfFetch("/api/contact", {
+    await $fetch("/api/contact", {
       method: "POST",
       body: event.data,
     });
-
-    if (error.value) {
-      throw new Error(
-        error.value.message || $t("contact.toast.error.description"),
-      );
-    }
 
     toast.add({
       title: $t("contact.toast.success.title"),
@@ -47,13 +44,13 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     state.name = undefined;
     state.email = undefined;
     state.message = undefined;
-  } catch (err) {
+  } catch (err: any) {
     toast.add({
       title: $t("contact.toast.error.title"),
       description:
-        err instanceof Error
-          ? err.message
-          : $t("contact.toast.error.description"),
+        err?.data?.message ||
+        err?.message ||
+        $t("contact.toast.error.description"),
       color: "error",
       icon: "i-lucide-circle-x",
     });
