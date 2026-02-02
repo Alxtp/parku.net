@@ -170,5 +170,48 @@
       "aboutButton": "About ParkU",
       "teamButton": "Meet the Team"
     }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "We'd love to hear from you! Send us a message and we'll get back to you shortly.",
+    "emailSection": {
+      "title": "Email Us",
+      "description": "Whether you have a question about features, need assistance, or want to provide feedback, our team is ready to help."
+    },
+    "form": {
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell us how we can help you..."
+      },
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Invalid email",
+        "messageRequired": "Message is required",
+        "messageMin": "Message must be at least 10 characters"
+      },
+      "submit": "Send Message",
+      "submitting": "Sending..."
+    },
+    "toast": {
+      "success": {
+        "title": "Success!",
+        "description": "Your message has been sent. We'll get back to you shortly."
+      },
+      "error": {
+        "title": "Error",
+        "description": "Failed to send message. Please try again or email us directly."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Parking Smarter?",
+      "description": "Join thousands of drivers who have already simplified their parking experience.",
+      "button": "Download the App"
+    }
   }
 }

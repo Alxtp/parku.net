@@ -1,6 +1,217 @@
 {
+  "nav": {
+    "about": "Über uns",
+    "team": "Team",
+    "contact": "Kontakt",
+    "download": "Download"
+  },
+  "footer": "Erstellt mit Nuxt UI • ©",
   "home": {
-    "title" : "ParkU 123- Smart Parking Solutions",
-    "description": "Book 123and list parking spots effortlessly with ParkU. Find free parking nearby on our interactive map and manage your spots with ease."
+    "title": "ParkU - Intelligente Parklösungen",
+    "description": "Parkplätze mühelos buchen und vermieten mit ParkU. Finden Sie freie Parkplätze in Ihrer Nähe auf unserer interaktiven Karte und verwalten Sie Ihre Plätze mit Leichtigkeit.",
+    "download": "Jetzt herunterladen",
+    "info": "Mehr erfahren",
+    "hero": {
+      "alt": "ParkU Hero Banner"
+    },
+    "features": {
+      "title": "Warum ParkU wählen?",
+      "description": "Erleben Sie die Zukunft des Parkens mit unseren innovativen Funktionen, die das Finden und Verwalten von Parkplätzen einfach und effizient machen.",
+      "items": {
+        "map": {
+          "title": "Interaktive Kartenansicht",
+          "description": "Finden Sie freie Parkplätze in Ihrer Nähe mit unserer interaktiven Echtzeit-Karte. Sehen Sie die Verfügbarkeit auf einen Blick und navigieren Sie direkt zu Ihrem Platz."
+        },
+        "booking": {
+          "title": "Einfache Buchung",
+          "description": "Reservieren Sie Parkplätze in Sekundenschnelle. Wählen Sie Ihre bevorzugte Zeit und Dauer und bezahlen Sie sicher über die App."
+        },
+        "list": {
+          "title": "Plätze vermieten",
+          "description": "Verwandeln Sie Ihren ungenutzten Parkplatz in zusätzliches Einkommen. Listen Sie Ihre Plätze einfach auf und verwalten Sie Buchungen über unsere benutzerfreundliche Oberfläche."
+        },
+        "secure": {
+          "title": "Sicher & Zuverlässig",
+          "description": "Ihre Daten und Transaktionen sind durch erstklassige Sicherheitsstandards geschützt. Genießen Sie Sicherheit durch verifizierte Nutzer und sichere Zahlungen."
+        },
+        "mobile": {
+          "title": "Mobile-First Design",
+          "description": "Optimiert für mobile Geräte, funktioniert ParkU nahtlos auf iOS und Android. Greifen Sie von unterwegs auf alle Funktionen zu."
+        },
+        "community": {
+          "title": "Community-Gesteuert",
+          "description": "Treten Sie einer wachsenden Gemeinschaft von Fahrern und Parkplatzbesitzern bei. Teilen Sie Feedback und helfen Sie, das Parken in Ihrer Gegend zu verbessern."
+        }
+      }
+    },
+    "mapView": {
+      "alt": "ParkU Kartenansicht",
+      "caption": "Entdecken Sie verfügbare Parkplätze auf unserer interaktiven Karte"
+    },
+    "cta": {
+      "title": "Bereit, Ihr Parkerlebnis zu revolutionieren?",
+      "description": "Laden Sie ParkU noch heute herunter und machen Sie sich nie wieder Sorgen um die Parkplatzsuche. Schließen Sie sich Tausenden von Nutzern an, die ihren täglichen Arbeitsweg vereinfacht haben.",
+      "download": "ParkU herunterladen",
+      "team": "Das Team kennenlernen"
+    }
+  },
+  "about": {
+    "title": "Über ParkU",
+    "description": "ParkU revolutioniert das städtische Parken, indem es Fahrer über eine nahtlose, technologiegestützte Plattform mit verfügbaren Parkplätzen verbindet.",
+    "hero": {
+      "alt": "ParkU Feature Highlight"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Den Stress bei der Parkplatzsuche zu eliminieren und die Auslastung städtischer Parkflächen zu maximieren.",
+      "problem": {
+        "title": "Das Problem",
+        "description": "In belebten Städten kann die Parkplatzsuche frustrierend und zeitaufwendig sein. Fahrer verschwenden wertvolle Zeit mit dem Umkreisen von Häuserblöcken, während Parkplatzbesitzer Plätze ungenutzt lassen."
+      },
+      "solution": {
+        "title": "Unsere Lösung",
+        "description": "ParkU schließt diese Lücke, indem es Parkplatzbesitzern ermöglicht, ihre Flächen anzubieten, und Fahrern erlaubt, diese sofort über unsere intuitive App zu buchen."
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert ParkU",
+      "description": "Einfache Schritte zu smarterem Parken.",
+      "steps": {
+        "find": {
+          "title": "Plätze finden",
+          "description": "Nutzen Sie unsere interaktive Karte, um verfügbare Parkplätze in der Nähe Ihres Ziels zu finden."
+        },
+        "book": {
+          "title": "Sofort buchen",
+          "description": "Reservieren Sie Ihren Platz mit nur wenigen Klicks. Wählen Sie Ihre gewünschte Zeit und Dauer."
+        },
+        "park": {
+          "title": "Parken & Los",
+          "description": "Kommen Sie an Ihrem reservierten Platz an und parken Sie entspannt. Kein Suchen oder Raten mehr."
+        }
+      }
+    },
+    "cta": {
+      "title": "Werden Sie Teil der ParkU-Community",
+      "description": "Laden Sie die App noch heute herunter und erleben Sie stressfreies Parken.",
+      "downloadButton": "Jetzt herunterladen"
+    }
+  },
+  "team": {
+    "title": "Lernen Sie unser Team kennen",
+    "description": "Die leidenschaftlichen Köpfe hinter ParkU, die sich der Transformation des städtischen Parkens widmen.",
+    "section": {
+      "title": "Unser Team",
+      "description": "Lernen Sie die Menschen kennen, die ParkU vorantreiben."
+    },
+    "members": {
+      "anamaria": {
+        "name": "Anamaria Miskovic",
+        "role": "Marketing Director",
+        "responsibility": "Verantwortlich für Social-Media-Strategie und Markenpräsenz"
+      },
+      "flavia": {
+        "name": "Flavia Wenger",
+        "role": "CEO & Gründerin",
+        "responsibility": "Verantwortlich für Unternehmensvision, Strategie und Führung"
+      },
+      "lea": {
+        "name": "Lea Kronig",
+        "role": "Operations Manager",
+        "responsibility": "Verantwortlich für den Betrieb, wichtige Geschäftskontakte und funktionale Aufsicht"
+      },
+      "melvin": {
+        "name": "Melvin Steffen",
+        "role": "Marketing Director",
+        "responsibility": "Verantwortlich für Social-Media-Initiativen und strategische Partnerschaften"
+      },
+      "mina": {
+        "name": "Mina Jungen",
+        "role": "Operations Manager",
+        "responsibility": "Verantwortlich für Finanzmanagement und interne Geschäftsprozesse"
+      },
+      "irina": {
+        "name": "Irina Wenger",
+        "role": "Lead Developer",
+        "responsibility": "Verantwortlich für Softwareentwicklung und technische Architektur"
+      }
+    },
+    "cta": {
+      "title": "Möchten Sie Teil unseres Teams werden?",
+      "description": "Wir sind immer auf der Suche nach talentierten Personen, die uns helfen, den Parkraum innovativ zu gestalten.",
+      "contactButton": "Kontaktieren Sie uns"
+    }
+  },
+  "download": {
+    "title": "ParkU herunterladen",
+    "description": "Holen Sie sich die App und parken Sie noch heute smarter. Verfügbar für iOS und Android.",
+    "hero": {
+      "alt": "ParkU herunterladen"
+    },
+    "section": {
+      "title": "Wählen Sie Ihre Plattform",
+      "description": "ParkU steht auf allen gängigen mobilen Plattformen zum Download bereit."
+    },
+    "platforms": {
+      "ios": {
+        "name": "iOS",
+        "description": "Laden Sie die App im App Store für iPhone und iPad herunter.",
+        "button": "Im App Store laden"
+      },
+      "android": {
+        "name": "Android",
+        "description": "Holen Sie sie sich auf Google Play für Android-Geräte.",
+        "button": "Bei Google Play laden"
+      }
+    },
+    "cta": {
+      "title": "Noch nicht bereit zum Download?",
+      "description": "Erfahren Sie mehr über ParkU und wie es Ihr Parkerlebnis verändern kann.",
+      "aboutButton": "Über ParkU",
+      "teamButton": "Das Team kennenlernen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "description": "Wir freuen uns, von Ihnen zu hören! Senden Sie uns eine Nachricht und wir melden uns in Kürze bei Ihnen.",
+    "emailSection": {
+      "title": "Schreiben Sie uns",
+      "description": "Egal ob Sie Fragen zu Funktionen haben, Hilfe benötigen oder Feedback geben möchten – unser Team ist für Sie da."
+    },
+    "form": {
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "E-Mail"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Sagen Sie uns, wie wir Ihnen helfen können..."
+      },
+      "validation": {
+        "nameRequired": "Name ist erforderlich",
+        "emailInvalid": "Ungültige E-Mail-Adresse",
+        "messageRequired": "Nachricht ist erforderlich",
+        "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein"
+      },
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet..."
+    },
+    "toast": {
+      "success": {
+        "title": "Erfolg!",
+        "description": "Ihre Nachricht wurde gesendet. Wir melden uns in Kürze bei Ihnen."
+      },
+      "error": {
+        "title": "Fehler",
+        "description": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt per E-Mail."
+      }
+    },
+    "cta": {
+      "title": "Bereit, smarter zu parken?",
+      "description": "Schließen Sie sich Tausenden von Fahrern an, die ihr Parkerlebnis bereits vereinfacht haben.",
+      "button": "Die App herunterladen"
+    }
   }
 }

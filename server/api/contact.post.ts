@@ -32,7 +32,7 @@ export default defineEventHandler(async (event) => {
       recipients: {
         to: [
           {
-            address: "test@test.ch",
+            address: "greedthegrape@gmail.com",
             displayName: "Parku Support",
           },
         ],

@@ -2,13 +2,20 @@
 import * as z from "zod";
 import type { FormSubmitEvent } from "@nuxt/ui";
 
+const localePath = useLocalePath();
 const { $csrfFetch } = useNuxtApp();
 
-const schema = z.object({
-  name: z.string("Name is required"),
-  email: z.email("Invalid email"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
+//const schema = z.object({
+//  name: z.string("$t('contact.form.name.label')"),
+//  email: z.email("Invalid email"),
+//  message: z.string('$t("contact.form.message.label")').min(10, "Message must be at least 10 characters")
+//});
+
+const schema = computed(() => z.object({
+  name: z.string($t("contact.form.validation.nameRequired")),
+  email: z.email($t("contact.form.validation.emailInvalid")),
+  message: z.string($t("contact.form.validation.messageRequired")).min(10, $t("contact.form.validation.messageMin")),
+}));
 
 type Schema = z.output<typeof schema>;
 
@@ -31,12 +38,14 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     });
 
     if (error.value) {
-      throw new Error(error.value.message || "Failed to send message");
+      throw new Error(
+        error.value.message || $t("contact.toast.error.description"),
+      );
     }
 
     toast.add({
-      title: "Success!",
-      description: "Your message has been sent. We'll get back to you shortly.",
+      title: $t("contact.toast.success.title"),
+      description: $t("contact.toast.success.description"),
       color: "green",
       icon: "i-lucide-check-circle",
     });
@@ -45,17 +54,14 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     state.email = undefined;
     state.message = undefined;
   } catch (err) {
-    console.error("Contact form error:", err);
-
     toast.add({
-      title: "Error",
+      title: $t("contact.toast.error.title"),
       description:
         err instanceof Error
           ? err.message
-          : "Failed to send message. Please try again or email us directly.",
-      color: "red",
+          : $t("contact.toast.error.description"),
+      color: "error",
       icon: "i-lucide-circle-x",
-      timeout: 5000,
     });
   } finally {
     isSubmitting.value = false;
@@ -66,8 +72,8 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 <template>
   <div>
     <UPageSection
-      title="Get in Touch"
-      description="We'd love to hear from you! Send us a message and we'll get back to you shortly."
+      :title="$t('contact.title')"
+      :description="$t('contact.description')"
     >
       <div class="max-w-2xl mx-auto">
         <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-8 shadow-md mb-8">
@@ -81,7 +87,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
               />
             </div>
           </div>
-          <h3 class="text-2xl font-semibold mb-3 text-center">Email Us</h3>
+          <h3 class="text-2xl font-semibold mb-3 text-center">
+            {{ $t("contact.emailSection.title") }}
+          </h3>
           <a
             href="mailto:info.parku@gmx.ch"
             class="text-xl text-primary-600 dark:text-primary-400 hover:underline font-medium block text-center"
@@ -89,61 +97,84 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             info.parku@gmx.ch
           </a>
           <p class="text-muted mt-4 text-center">
-            Whether you have a question about features, need assistance, or want
-            to provide feedback, our team is ready to help.
+            {{ $t("contact.emailSection.description") }}
           </p>
         </div>
 
-        <UForm
-          :schema="schema"
-          :state="state"
-          class="space-y-5"
-          @submit="onSubmit"
-        >
-          <UFormField label="Name" name="name" required>
-            <UInput v-model="state.name" placeholder="John Pork" size="lg" />
-          </UFormField>
-
-          <UFormField label="Email" name="email" required>
-            <UInput
-              v-model="state.email"
-              type="email"
-              placeholder="john.pork@example.com"
-              size="lg"
-            />
-          </UFormField>
-
-          <UFormField label="Message" name="message" required>
-            <UTextarea
-              v-model="state.message"
-              placeholder="Tell us how we can help you..."
-              :rows="6"
-              size="lg"
-            />
-          </UFormField>
-
-          <UButton
-            type="submit"
-            :loading="isSubmitting"
-            :disabled="isSubmitting"
-            size="lg"
-            block
+        <div class="p-10">
+          <UForm
+            :schema="schema"
+            :state="state"
+            class="space-y-5"
+            @submit="onSubmit"
           >
-            <span v-if="!isSubmitting">Send Message</span>
-            <span v-else>Sending...</span>
-          </UButton>
-        </UForm>
+            <UFormField
+              :label="$t('contact.form.name.label')"
+              name="name"
+              required
+            >
+              <UInput
+                v-model="state.name"
+                placeholder="John Doe"
+                size="lg"
+                class="w-full"
+              />
+            </UFormField>
+
+            <UFormField
+              :label="$t('contact.form.email.label')"
+              name="email"
+              required
+            >
+              <UInput
+                v-model="state.email"
+                type="email"
+                placeholder="john.doe@example.com"
+                size="lg"
+                class="w-full"
+              />
+            </UFormField>
+
+            <UFormField
+              :label="$t('contact.form.message.label')"
+              name="message"
+              required
+            >
+              <UTextarea
+                v-model="state.message"
+                :placeholder="$t('contact.form.message.placeholder')"
+                :rows="6"
+                size="lg"
+                class="w-full"
+              />
+            </UFormField>
+
+            <UButton
+              type="submit"
+              :loading="isSubmitting"
+              :disabled="isSubmitting"
+              size="lg"
+              block
+            >
+              {{
+                isSubmitting
+                  ? $t("contact.form.submitting")
+                  : $t("contact.form.submit")
+              }}
+            </UButton>
+          </UForm>
+        </div>
       </div>
     </UPageSection>
 
     <UPageSection>
       <UPageCTA
-        title="Ready to Start Parking Smarter?"
-        description="Join thousands of drivers who have already simplified their parking experience."
+        :title="$t('contact.cta.title')"
+        :description="$t('contact.cta.description')"
         :links="[
           {
-            label: 'Download the App',
-            to: '/download',
+            label: $t('contact.cta.button'),
+            to: localePath('download'),
             trailingIcon: 'i-lucide-download',
           },
         ]"
