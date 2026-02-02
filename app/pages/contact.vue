@@ -5,12 +5,6 @@ import type { FormSubmitEvent } from "@nuxt/ui";
 const localePath = useLocalePath();
 const { $csrfFetch } = useNuxtApp();
 
-//const schema = z.object({
-//  name: z.string("$t('contact.form.name.label')"),
-//  email: z.email("Invalid email"),
-//  message: z.string('$t("contact.form.message.label")').min(10, "Message must be at least 10 characters")
-//});
-
 const schema = computed(() => z.object({
   name: z.string($t("contact.form.validation.nameRequired")),
   email: z.email($t("contact.form.validation.emailInvalid")),
