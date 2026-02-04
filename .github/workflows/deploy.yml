@@ -7,7 +7,6 @@ on:
     paths-ignore:
       - .gitignore
       - README.md
-  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -16,6 +15,7 @@ permissions:
 env:
   AZURE_WEBAPP_NAME: 'app-parku-prod'
   AZURE_WEBAPP_PACKAGE_PATH: '.output'
+  NODE_VERSION: '24.11'
 
 jobs:
   build-and-deploy:
@@ -29,17 +29,21 @@ jobs:
         tenant-id: ${{ secrets.AZURE_TENANT_ID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-    - uses: oven-sh/setup-bun@v2
+    - name: Setup Node ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ env.NODE_VERSION }}
 
-    - name: 'bun install and build'
+    - name: 'npm install and build'
       run: |
-        bun install
-        bun nuxt build
+        npm install
+        npm run build
 
     - uses: azure/webapps-deploy@v3
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
 
-    - run: |
+    - name: logout
+      run: |
         az logout
