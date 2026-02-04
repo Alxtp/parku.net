@@ -2,6 +2,7 @@
 import * as z from "zod";
 import type { FormSubmitEvent } from "@nuxt/ui";
 
+const { $csrfFetch } = useNuxtApp();
 const localePath = useLocalePath();
 
 const schema = computed(() =>
@@ -29,7 +30,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
   try {
     isSubmitting.value = true;
 
-    await $fetch("/api/contact", {
+    await $csrfFetch("/api/contact", {
       method: "POST",
       body: event.data,
     });
