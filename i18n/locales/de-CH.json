@@ -1,0 +1,217 @@
+{
+  "nav": {
+    "about": "Über üs",
+    "team": "Team",
+    "contact": "Kontakt",
+    "download": "Abelade"
+  },
+  "footer": "Bout mit Nuxt UI • ©",
+  "home": {
+    "title": "ParkU - Smarti Parklösige",
+    "description": "Parkplätz ganz eifach bueche und vermiete mit ParkU. Find freii Parkplätz i dinere Neechi uf üsere interaktive Charte und verwalt dini Plätz ohni Stress.",
+    "download": "Jetzt abelade",
+    "info": "Me erfahre",
+    "hero": {
+      "alt": "ParkU Hero Banner"
+    },
+    "features": {
+      "title": "Warum ParkU?",
+      "description": "Erläb d'Zuekunft vom Parkiere mit euse innovative Funktione, wo s'Finde und Verwalte vo Parkplätz eifach und effizient mached.",
+      "items": {
+        "map": {
+          "title": "Interaktivi Charte",
+          "description": "Find freii Parkplätz i dinere Neechi mit eusere Echtziit-Charte. Gseh d'Verfüegbarkeit uf ein Blick und navigier direkt zu dim Platz."
+        },
+        "booking": {
+          "title": "Eifachs Bueche",
+          "description": "Reservier Parkplätz in Sekundeschnälle. Wähl dini gwünschti Ziit und Duur und zahl sicher über d'App."
+        },
+        "list": {
+          "title": "Vermiet dini Plätz",
+          "description": "Mach us dim ungnützte Parkplatz es bitzeli Gäld. Lischt dini Plätz eifach uf und verwalt d'Buechige über üses benutzerfründliche Interface."
+        },
+        "secure": {
+          "title": "Sicher & Zueverlässig",
+          "description": "Dini Date und Transaktione sind mit de beste Sicherheitsstandards gschützt. Gnüss es guets Gfüehl dank verifizierte Nutzer und sichere Zahlige."
+        },
+        "mobile": {
+          "title": "Mobile-First Design",
+          "description": "Optimiert für Mobilgrät, funktioniert ParkU nahtlos uf iOS und Android. Heb Zuegriff uf alli Funktione, egal wo du bisch."
+        },
+        "community": {
+          "title": "Community-Fokus",
+          "description": "Wird Teil vonere wachsende Community vo Fahrer und Parkplatzbsitzer. Teil dis Feedback und hälf mit, s'Parkiere i dinere Region z'verbessere."
+        }
+      }
+    },
+    "mapView": {
+      "alt": "ParkU Charteasicht",
+      "caption": "Entdeck verfüegbari Parkplätz uf eusere interaktive Charte"
+    },
+    "cta": {
+      "title": "Bereit, dis Parkerläbnis z'revolutioniere?",
+      "description": "Lad ParkU hüt no abe und mach der nie meh Sorge um d'Parkplatzsuechi. Schliess di de Tausende User a, wo ihre Alltag scho vereinfacht hend.",
+      "download": "ParkU abelade",
+      "team": "S'Team kennelehre"
+    }
+  },
+  "about": {
+    "title": "Über ParkU",
+    "description": "ParkU revolutioniert s'parkiere i de Stadt, indem es Fahrer und freii Parkplätz über e moderni, technologiedriebeni Plattform verbindet.",
+    "hero": {
+      "alt": "ParkU Feature Highlight"
+    },
+    "mission": {
+      "title": "Üsi Mission",
+      "description": "De Stress bi de Parkplatzsuechi eliminiere und d'Uslaschtig vo städtische Parkflächi maximiere.",
+      "problem": {
+        "title": "S'Problem",
+        "description": "I de Stadt isch d'Parkplatzsuechi oft frustrierend und brucht viel Ziit. Fahrer verschwänded wertvöll Ziit mit Umekreise, während Parkplatzbsitzer ihri Plätz leer lönd."
+      },
+      "solution": {
+        "title": "Üsi Lösig",
+        "description": "ParkU schliesst die Lucke: Bsitzer chönd ihri Plätz afüehre und Fahrer chönd sie sofort über üsi intuitiv App bueche."
+      }
+    },
+    "howItWorks": {
+      "title": "So funktioniert ParkU",
+      "description": "Eifachi Schritt zum smarte Parkiere.",
+      "steps": {
+        "find": {
+          "title": "Plätz finde",
+          "description": "Bnutz üsi interaktiv Charte, zum verfüegbari Parkplätz i de Neechi vo dim Ziel z'finde."
+        },
+        "book": {
+          "title": "Sofort bueche",
+          "description": "Reservier din Platz mit es paar Klicks. Wähl dini Ziit und Duur us."
+        },
+        "park": {
+          "title": "Parkiere & Los",
+          "description": "Chum bi dim reservierte Platz a und parkier ganz entspannt. Dis Gsueche het es Ändi."
+        }
+      }
+    },
+    "cta": {
+      "title": "Wird Teil vo de ParkU-Community",
+      "description": "Lad d'App hüt no abe und erläb stressfreis Parkiere.",
+      "downloadButton": "Jetzt abelade"
+    }
+  },
+  "team": {
+    "title": "Lern üses Team kenne",
+    "description": "Die motivierte Chöpf hinter ParkU, wo s'parkiere i de Stadt wänd verändere.",
+    "section": {
+      "title": "Üses Team",
+      "description": "Lern d'Lüt kenne, wo ParkU voratriebed."
+    },
+    "members": {
+      "anamaria": {
+        "name": "Anamaria Miskovic",
+        "role": "Marketing Director",
+        "responsibility": "Verantwortlich für d'Social-Media-Strategie und d'Marke-Präsenz"
+      },
+      "flavia": {
+        "name": "Flavia Wenger",
+        "role": "CEO & Gründerin",
+        "responsibility": "Verantwortlich für d'Vision, Strategie und d'Unternähmensfüehrig"
+      },
+      "lea": {
+        "name": "Lea Kronig",
+        "role": "Operations Manager",
+        "responsibility": "Verantwortlich für de Betrieb, Gschäftskontakt und d'Funktions-Ufsicht"
+      },
+      "melvin": {
+        "name": "Melvin Steffen",
+        "role": "Marketing Director",
+        "responsibility": "Verantwortlich für Social-Media-Initiative und strategischi Partnerschafte"
+      },
+      "mina": {
+        "name": "Mina Jungen",
+        "role": "Operations Manager",
+        "responsibility": "Verantwortlich fürs Finanzmanagement und interni Abläuf"
+      },
+      "irina": {
+        "name": "Irina Wenger",
+        "role": "Lead Developer",
+        "responsibility": "Verantwortlich für d'Software-Entwicklig und d'technisch Architektur"
+      }
+    },
+    "cta": {
+      "title": "Wotsch au zum Team ghöre?",
+      "description": "Mir sueched immer talentierti Lüt, wo üs hälfed, de Parkruum innovativ z'gstalte.",
+      "contactButton": "Kontaktier üs"
+    }
+  },
+  "download": {
+    "title": "ParkU abelade",
+    "description": "Hol der d'App und fang hüt a, smarter z'parkiere. Verfüegbar für iOS und Android.",
+    "hero": {
+      "alt": "ParkU abelade"
+    },
+    "section": {
+      "title": "Wähl dini Plattform",
+      "description": "ParkU gits für alli gängige Mobile-Plattforme zum abelade."
+    },
+    "platforms": {
+      "ios": {
+        "name": "iOS",
+        "description": "Lad d'App im App Store für dis iPhone oder iPad abe.",
+        "button": "Im App Store lade"
+      },
+      "android": {
+        "name": "Android",
+        "description": "Hol sie der im Google Play Store für Android-Grät.",
+        "button": "Bi Google Play lade"
+      }
+    },
+    "cta": {
+      "title": "No nöd bereit zum Abelade?",
+      "description": "Erfahr meh über ParkU und wie es dis Parkerläbnis verändere chan.",
+      "aboutButton": "Über ParkU",
+      "teamButton": "S'Team kennelehre"
+    }
+  },
+  "contact": {
+    "title": "Mäld di bi üs",
+    "description": "Mir fröie üs, vo der z'ghöre! Schick üs e Nachricht und mir mälded üs so schnäll wie möglich.",
+    "emailSection": {
+      "title": "Schriib üs es Mail",
+      "description": "Egal öb du Froge zu de Funktione häsch, Hilf bruchsch oder üs Feedback wotsch gäh – üses Team isch für di da."
+    },
+    "form": {
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "E-Mail"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Schriib üs, wie mir der chönd hälfe..."
+      },
+      "validation": {
+        "nameRequired": "Name isch erforderlich",
+        "emailInvalid": "Ungültigi E-Mail-Adrässe",
+        "messageRequired": "Nachricht isch erforderlich",
+        "messageMin": "D'Nachricht mues mindestens 10 Zeiche lang si"
+      },
+      "submit": "Nachricht schicke",
+      "submitting": "Wird gschickt..."
+    },
+    "toast": {
+      "success": {
+        "title": "Gschafft!",
+        "description": "Dini Nachricht isch gschickt worde. Mir mälded üs bald bi der."
+      },
+      "error": {
+        "title": "Fehler",
+        "description": "D'Nachricht het nöd chönne gschickt werde. Probier's bitte nomal oder schriib üs es Mail."
+      }
+    },
+    "cta": {
+      "title": "Bereit zum smarter parkiere?",
+      "description": "Schliess di de Tausende Fahrer a, wo ihres Parkerläbnis scho vereinfacht hend.",
+      "button": "D'App abelade"
+    }
+  }
+}
