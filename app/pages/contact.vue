@@ -2,8 +2,8 @@
 import * as z from "zod";
 import type { FormSubmitEvent } from "@nuxt/ui";
 
-const { $csrfFetch } = useNuxtApp();
-const localePath = useLocalePath();
+const { $csrfFetch } = useNuxtApp()
+const localePath = useLocalePath()
 
 const schema = computed(() =>
   z.object({
