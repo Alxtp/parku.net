@@ -29,5 +29,9 @@ export default defineNuxtConfig({
     ],
   },
 
+  nitro: {
+    preset: "bun"
+  },
+
   compatibilityDate: "2025-01-15",
 });
