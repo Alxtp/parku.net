@@ -1,70 +1,74 @@
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from "@nuxt/ui";
+
+const { locale, locales, setLocale } = useI18n();
+const lang = computed(() => locale.value);
+const localePath = useLocalePath();
+const route = useRoute();
 
 useHead({
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  ],
-  link: [
-    { rel: 'icon', href: '/favicon.ico' }
-  ],
+  meta: [{ name: "viewport", content: "width=device-width, initial-scale=1" }],
+  link: [{ rel: "icon", href: "/favicon.ico" }],
   htmlAttrs: {
-    lang: 'en'
-  }
-})
-
-const title = 'ParkU - Smart Parking Solutions'
-const description = 'Book and list parking spots effortlessly with ParkU. Find free parking nearby on our interactive map and manage your spots with ease.'
+    lang,
+  },
+});
 
 useSeoMeta({
-  title,
-  description,
-  ogTitle: title,
-  ogDescription: description
-})
-
-const route = useRoute()
+  title: $t("home.title"),
+  description: $t("home.description"),
+  ogTitle: $t("home.title"),
+  ogDescription: $t("home.description"),
+});
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: 'About',
-    to: '/about',
-    active: route.path.startsWith('/about')
+    label: $t("nav.about"),
+    to: localePath("about"),
+    active: route.path.endsWith("/about"),
   },
   {
-    label: 'Team',
-    to: '/team',
-    active: route.path.startsWith('/team')
+    label: $t("nav.team"),
+    to: localePath("team"),
+    active: route.path.endsWith("/team"),
   },
   {
-    label: 'Contact',
-    to: '/contact',
-    active: route.path.startsWith('/contact')
-  }
-])
+    label: $t("nav.contact"),
+    to: localePath("contact"),
+    active: route.path.endsWith("/contact"),
+  },
+]);
 </script>
 
 <template>
-  <UApp>
+  <UApp :locale="locales[locale]">
     <UHeader>
       <template #left>
-        <NuxtLink to="/">
-          <img class="w-auto h-12 shrink-0" src="/img/logo.png" alt="Logo">
+        <NuxtLink :to="localePath('/')">
+          <img class="w-auto h-12 shrink-0" src="/img/logo.png" alt="Logo" />
         </NuxtLink>
       </template>
 
       <UNavigationMenu :items="items" />
 
       <template #right>
+        <ULocaleSelect
+          :model-value="locale"
+          :locales="Object.values(locales)"
+          variant="ghost"
+          :icon="false"
+          @update:model-value="setLocale($event)"
+        />
+
         <UColorModeButton />
 
         <UButton
-          to="/download"
+          :to="localePath('download')"
           icon="i-lucide-download"
-          aria-label="Download"
+          :label="$t('nav.download')"
           color="neutral"
           variant="ghost"
-        >Download</UButton>
+        />
       </template>
 
       <template #body>
@@ -76,12 +80,12 @@ const items = computed<NavigationMenuItem[]>(() => [
       <NuxtPage />
     </UMain>
 
-    <USeparator/>
+    <USeparator />
 
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          {{ $t("footer") }} {{ new Date().getFullYear() }}
         </p>
       </template>
 
@@ -90,7 +94,6 @@ const items = computed<NavigationMenuItem[]>(() => [
           to="https://github.com/Alxtp/parku.net"
           target="_blank"
           icon="i-simple-icons-github"
-          aria-label="GitHub"
           color="neutral"
           variant="ghost"
         />

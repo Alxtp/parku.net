@@ -1,19 +1,16 @@
 name: "Build and Deploy"
 
 on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - .gitignore
-      - README.md
   workflow_dispatch:
 
 permissions:
+  id-token: write
   contents: read
 
 env:
-  NODE_VERSION: '22.20'
+  AZURE_WEBAPP_NAME: 'app-parku-prod'
+  AZURE_WEBAPP_PACKAGE_PATH: '.output'
+  NODE_VERSION: '24.11'
 
 jobs:
   build-and-deploy:
@@ -21,15 +18,25 @@ jobs:
     steps:
     - uses: actions/checkout@v6
 
-    - name: Setup Node ${{ env.NODE_VERSION }}
-      uses: actions/setup-node@v6
+    - uses: azure/login@v2
       with:
-        node-version: ${{ env.NODE_VERSION }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
-    - uses: azure/static-web-apps-deploy@v1
+    - uses: oven-sh/setup-bun@v2
+
+    - name: 'bun install and build'
+      run: |
+        bun install
+        bun run build
+
+    - uses: azure/webapps-deploy@v3
       with:
-        azure_static_web_apps_api_token: ${{ secrets.DEPLOYMENT_TOKEN }}
-        action: "upload"
-        app_location: '/'
-        api_location: '.output/server'
-        output_location: '.output/public'
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        clean: true
+
+    - name: logout
+      run: |
+        az logout
